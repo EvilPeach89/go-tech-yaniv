@@ -1,9 +1,14 @@
-import { Card } from "react-bootstrap";
+import { Card, Form } from "react-bootstrap";
 
-const QuestionText = () => {
+const QuestionText = ({question}) => {
+    const showRequired = question.required ? <span className="asterisk"> *</span> : null;
+
     return (
-        <Card className="white-bg">
-            asdf
+        <Card body className="white-bg">
+            <Form.Group controlId={question.id}>
+                <Form.Label>{question.content}{showRequired}</Form.Label>
+                <Form.Control required={question.required} type="text" placeholder="Your answer" />
+            </Form.Group>
         </Card>
     )
 }

@@ -1,9 +1,17 @@
-import { Card } from "react-bootstrap"
+import { Button, Form, Stack } from "react-bootstrap";
 import QuestionChoice from "./question-types/Question-choice";
 import QuestionText from "./question-types/Question-text";
 
 const QuestionsForm = ({ questions }) => {
-    console.log(questions);
+    const submitHandler = (event) => {
+        event.preventDefault();
+        event.stopPropogation();
+        /*
+            react-bootstrap catches all the required inputs.
+            for more specific validation I can check all the inputs from the event passed and apply custom changes
+            as specified here: https://react-bootstrap.netlify.app/forms/validation/
+         */
+    }
 
     const renderQuestions = () => {
         return questions.map((question) => {
@@ -22,10 +30,13 @@ const QuestionsForm = ({ questions }) => {
     }
 
     return (
-        <Card className="white-bg">
-            {renderQuestions()}
-        </Card>
+        <Form onSubmit={submitHandler}>
+            <Stack gap={3}>
+                {renderQuestions()}
+            </Stack>
+            <Button as="input" type="submit" className="submit-btn" value="Submit"/>
+        </Form>
     )
-}
+};
 
 export default QuestionsForm;

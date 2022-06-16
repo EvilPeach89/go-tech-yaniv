@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(253, 208, 216);
+    background-color: #d4d4d4;
 }
 
 .wrapper {
@@ -12,19 +12,44 @@ body {
 }
 
 .white-bg {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .required {
-    color: red;
-    margin-top: 5px;
+    color: #ff0000;
+    font-weight: 500;
+    margin-top: 0.5rem;
     font-size: 0.8rem;
 }
 
+.asterisk {
+    color: #ff0000;
+}
+
 .card-header {
-    border-top: 4px solid aqua;
+    border-top: 4px solid #0b5ed7;
+    margin-bottom: 1rem;
 }
 
 .card-title {
     font-size: 2rem;
+}
+
+.submit-btn {
+    margin-top: 1rem;
+    float: right;
+}
+
+.form-check {
+    margin-bottom: 0.5rem;
+}
+
+input.form-control {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0px;
+}
+
+.input-group input.form-control {
+    padding: 0 0.75rem;
 }
