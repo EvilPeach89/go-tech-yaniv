@@ -1,0 +1,100 @@
+{
+    "questionnaires": [
+        {
+            "id": "1",
+            "header": "Some random questions",
+            "sub-header": "I hope you like them though!",
+            "questions": [
+                {
+                    "type": "text",
+                    "required": true,
+                    "content": "How do you do?"
+                },
+                {
+                    "type": "choice",
+                    "content": "Which instument do you prefer?",
+                    "required": true,
+                    "answers": [
+                        "guitar",
+                        "bass",
+                        "drums",
+                        "harmonica"
+                    ]
+                },
+                {
+                    "type": "text",
+                    "required": false,
+                    "content": "What is your favourite band?"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "header": "GoTech Questionnaire",
+            "sub-header": "Show me what you got!",
+            "questions": [
+                {
+                    "type": "text",
+                    "required": false,
+                    "content": "What do you like about programming?"
+                },
+                {
+                    "type": "choice",
+                    "required": true,
+                    "content": "Which language is your favorite?",
+                    "answers": [
+                        "JavaScript",
+                        "TypeScript",
+                        "CoffeeScript"
+                    ]
+                },
+                {
+                    "type": "fancy-choice",
+                    "required": true,
+                    "content": "How was the assignment?",
+                    "answers": [
+                        "Easy",
+                        "Normal",
+                        "Hard"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "header": "Some fancy questions",
+            "sub-header": "Not that fancy though!",
+            "questions": [
+                {
+                    "type": "text",
+                    "required": true,
+                    "content": "What does not exist, but should?"
+                },
+                {
+                    "type": "choice",
+                    "required": true,
+                    "content": "How long do you think you could survive on your own?",
+                    "answers": [
+                        "One day",
+                        "A week",
+                        "A Month",
+                        "A year",
+                        "I will survive for eternity!"
+                    ]
+                },
+                {
+                    "type": "fancy-choice",
+                    "required": false,
+                    "content": "Who is your favorite artist or band?",
+                    "answers": [
+                        "Daft Punk",
+                        "Megadeth",
+                        "Frank Zappa",
+                        "Jimi Hendrix",
+                        "Stevie Ray Vaughan"
+                    ]
+                }
+            ]
+        }
+    ]
+}
