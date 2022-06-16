@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(253, 208, 216);
+}
+
+.wrapper {
+    max-width: 60%;
+    margin: 20px auto 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.required {
+    color: red;
+    margin-top: 5px;
+    font-size: 0.8rem;
+}
+
+.card-header {
+    border-top: 4px solid aqua;
+}
+
+.card-title {
+    font-size: 2rem;
+}

@@ -7,11 +7,13 @@
             "questions": [
                 {
                     "type": "text",
+                    "id": "11",
                     "required": true,
                     "content": "How do you do?"
                 },
                 {
                     "type": "choice",
+                    "id": "12",
                     "content": "Which instument do you prefer?",
                     "required": true,
                     "answers": [
@@ -23,6 +25,7 @@
                 },
                 {
                     "type": "text",
+                    "id": "13",
                     "required": false,
                     "content": "What is your favourite band?"
                 }
@@ -35,11 +38,13 @@
             "questions": [
                 {
                     "type": "text",
+                    "id": "21",
                     "required": false,
                     "content": "What do you like about programming?"
                 },
                 {
                     "type": "choice",
+                    "id": "22",
                     "required": true,
                     "content": "Which language is your favorite?",
                     "answers": [
@@ -50,6 +55,7 @@
                 },
                 {
                     "type": "fancy-choice",
+                    "id": "23",
                     "required": true,
                     "content": "How was the assignment?",
                     "answers": [
@@ -67,11 +73,13 @@
             "questions": [
                 {
                     "type": "text",
+                    "id": "31",
                     "required": true,
                     "content": "What does not exist, but should?"
                 },
                 {
                     "type": "choice",
+                    "id": "32",
                     "required": true,
                     "content": "How long do you think you could survive on your own?",
                     "answers": [
@@ -84,6 +92,7 @@
                 },
                 {
                     "type": "fancy-choice",
+                    "id": "33",
                     "required": false,
                     "content": "Who is your favorite artist or band?",
                     "answers": [
